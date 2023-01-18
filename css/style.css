@@ -2,10 +2,14 @@
   --btn-color: #2196f3;
   --main-txt-color: #757575;
   --title-txt-color: #212121;
+  --bgrnd-color: #ffffff;
+  --bgrnd-hero: #2f303a;
+  --bgrnd-team: #f5f4fa;
+  --border-color: #eeeeee;
 }
 
 body {
-  background-color: #ffffff;
+  background-color: var(--bgrnd-color);
   font-family: "roboto", sans-serif;
   color: var(--main-txt-color);
 }
@@ -72,38 +76,36 @@ ul {
   left: 0px;
   top: 80px;
 
-  background: #2f303a;
+  background: var(--bgrnd-hero);
 }
 .cta-title {
   width: 696px;
   height: 120px;
   font-family: inherit;
-  font-style: normal;
   font-weight: 900;
   font-size: 44px;
-  line-height: 136%;
+  line-height: 1.36;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: #ffffff;
+  color: var(--bgrnd-color);
   text-align: center;
 }
 
 .cta-btn {
   width: 200px;
   height: 50px;
-  font-style: normal;
   font-weight: 700;
   font-size: 16px;
-  line-height: 188%;
+  line-height: 1.88;
   background-color: var(--btn-color);
-  color: #ffffff;
+  color: var(--bgrnd-color);
   border: none;
   border-radius: 4%;
 }
 
 .cta-btn:hover {
-  background-color: #0787ed;
+  background-color: var(--btn-color);
 }
 
 .features-title {
@@ -116,58 +118,54 @@ ul {
 
 .feature-title {
   font-family: "Roboto";
-  font-style: normal;
   font-weight: 700;
   font-size: 14px;
-  line-height: 16px;
+  line-height: 1.14;
   letter-spacing: 0.03em;
   color: var(--title-txt-color);
 }
 
 .feature-desc {
   letter-spacing: 0.03em;
-  font-style: normal;
-  font-weight: 400;
   font-size: 14px;
-  line-height: 171%;
+  line-height: 1.71;
 }
 
 .gallery-title,
 .team-title {
   letter-spacing: 0.03em;
-  font-style: normal;
   font-weight: 700;
   font-size: 36px;
-  line-height: 117%;
+  line-height: 1.17;
   text-align: center;
   color: var(--title-txt-color);
 }
 
 .team-section {
-  background-color: #f5f4fa;
+  background-color: var(--bgrnd-team);
 }
 
 .team-item {
   width: 270px;
   height: 368px;
-  background-color: #ffffff;
+  background-color: var(--bgrnd-color);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
 }
 
 .team-name {
-  font-style: normal;
   font-weight: 500;
   font-size: 16px;
-  line-height: 120%;
+  line-height: 1.2;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--title-txt-color);
 }
 
 .team-desc {
-  font-style: normal;
-  font-weight: 400;
   font-size: 16px;
-  line-height: 120%;
+  line-height: 1.2;
   text-align: center;
   letter-spacing: 0.03em;
 }
@@ -175,25 +173,23 @@ ul {
 .footer {
   width: 1600px;
   height: 252px;
-  background-color: #2f303a;
+  background-color: var(--bgrnd-hero);
 }
 
 .address-footer {
   font-style: normal;
-  font-weight: 400;
   font-size: 14px;
-  line-height: 171%;
+  line-height: 1.71;
   letter-spacing: 0.03em;
-  color: #ffffff;
+  color: --bgrn;
 }
 
 .email-footer,
 .tel-footer {
   letter-spacing: 0.03em;
   font-style: normal;
-  font-weight: 400;
   font-size: 14px;
-  line-height: 171%;
+  line-height: 1.71;
   color: rgba(255, 255, 255, 0.6);
   text-decoration: none;
 }
@@ -201,14 +197,14 @@ ul {
 /* Portfolio page  */
 
 .filter-btn {
-  font-style: normal;
+  font-family: inherit;
   font-weight: 500;
   font-size: 16px;
-  line-height: 162%;
+  line-height: 1.62;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--title-txt-color);
-  background-color: #f5f4fa;
+  background-color: var(--bgrnd-team);
   border: none;
   height: 38px;
   border-radius: 4%;
@@ -236,7 +232,14 @@ ul {
 
 .filter-btn:hover {
   background-color: var(--btn-color);
-  color: #ffffff;
+  color: var(--bgrnd-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
+.filter-btn:focus {
+  background-color: var(--btn-color);
+  color: var(--bgrnd-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
 }
@@ -244,24 +247,21 @@ ul {
 .portfolio-item {
   width: 370px;
   height: 404px;
-  background: #ffffff;
+  background: var(--bgrnd-color);
   border: 1px solid #eeeeee;
 }
 
 .portfolio-item-name {
-  font-style: normal;
   font-weight: 700;
   font-size: 18px;
-  line-height: 200%;
+  line-height: 2;
   letter-spacing: 0.06em;
   color: var(--title-txt-color);
 }
 
 .portfolio-item-desc {
-  font-style: normal;
-  font-weight: 400;
   font-size: 16px;
-  line-height: 188%;
+  line-height: 1.88;
   letter-spacing: 0.03em;
 }
 
